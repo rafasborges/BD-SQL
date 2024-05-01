@@ -1,2 +1,2 @@
 DELETE FROM Medicos
-WHERE cidade = "Biguacu" AND cidade = "Palhoca";
+WHERE cidade = 'Biguacu' OR cidade = 'Palhoca';
