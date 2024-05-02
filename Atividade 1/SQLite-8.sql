@@ -1,3 +1,5 @@
+-- Linguagem: SQL
+
 CREATE TABLE Ambulatorios (
     nroa int,
     andar numeric(2) NOT NULL,
