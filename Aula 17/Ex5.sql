@@ -1,3 +1,3 @@
-select nome, cpf 
-from funcionarios 
-where salario < ALL(select max(salario) from funcionarios);
+SELECT nome, cpf 
+FROM funcionarios 
+WHERE salario < ALL(SELECT max(salario) FROM funcionarios);

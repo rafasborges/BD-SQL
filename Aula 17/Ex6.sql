@@ -1,4 +1,4 @@
-select nome 
-from pacientes 
-where codp = SOME(select codp from consultas where hora < ALL(select hora from consultas where "data" = '2020/10/14'));
+SELECT nome 
+FROM pacientes 
+WHERE codp = SOME(SELECT codp FROM consultas WHERE hora < ALL(SELECT hora FROM consultas WHERE "data" = '2020/10/14'));
 

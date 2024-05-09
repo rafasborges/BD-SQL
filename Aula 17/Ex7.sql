@@ -1,3 +1,3 @@
-select nroa, andar 
-from ambulatorios 
-where capacidade > SOME(select capacidade from ambulatorios where andar = 1);
+SELECT nroa, andar 
+FROM ambulatorios 
+WHERE capacidade > SOME(SELECT capacidade FROM ambulatorios WHERE andar = 1);
